@@ -205,10 +205,15 @@ Je suis une personne curieuse, rigoureuse et motivée, toujours prête à appren
   </p>
 </section>
 
-
 <section id="contact" class="contact-section">
   <h2>Contactez-moi</h2>
-  <form action="mailto:ton.email@example.com" method="POST" enctype="text/plain" class="contact-form">
+  <form action="https://formsubmit.co/iravenwangers@gmail.com" method="POST" class="contact-form">
+    
+    <!-- Désactive Captcha + redirection optionnelle -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Optionnel : rediriger vers une page de remerciement -->
+    <!-- <input type="hidden" name="_next" value="https://tonsite.com/merci.html"> -->
+
     <label for="name">Nom :</label>
     <input type="text" id="name" name="name" required>
 
@@ -221,6 +226,7 @@ Je suis une personne curieuse, rigoureuse et motivée, toujours prête à appren
     <button type="submit">Envoyer</button>
   </form>
 </section>
+
 
 
    <script src="script.js"></script>
