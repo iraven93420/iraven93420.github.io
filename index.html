@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio • Iraven Chengubraydoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#hero" class="logo" aria-label="Vers l'accueil">I.C.</a>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects-section">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Basculer le thème"><i class="fas fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="container hero">
+            <div class="hero-content">
+                <p class="greeting">Bonjour, je suis</p>
+                <h1>Iraven Chengubraydoo</h1>
+                <h2>Administration, gestion et exploitation des données</h2>
+                <p class="tagline">
+                    Étudiant en BUT Informatique (3e année) à l'IUT d'Amiens. Je recherche un stage du 2 mars au 5 juin 2026.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="cta-button">Voir mes expériences <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="cta-button ghost">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img class="avatar" src="avatar.png" alt="Photo d'Iraven Chengubraydoo">
+                <div class="blob" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section id="about" class="container section">
+            <h3>À propos</h3>
+            <div class="about-grid">
+                <p>
+                    Étudiant en troisième année de BUT Informatique à l'IUT d'Amiens, orienté vers l'administration, la gestion et l'exploitation des données. Passionné par l'analyse des données (Python) et la conception d'interface claire et efficace.
+                </p>
+                <p>
+                    Compétences en développement web (HTML, CSS, JavaScript, PHP) et en bases de données (SQL/NoSQL). J'apprécie les projets où la donnée et l'expérience utilisateur se rencontrent.
+                </p>
+                <p class="langues"><i class="fas fa-globe"></i> Anglais B2 • Espagnol B2</p>
+            </div>
+        </section>
+
+        <section id="skills" class="container section">
+            <h3>Compétences</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h4>Data & Bases</h4>
+                    <p>SQL (PL/SQL, MySQL, PostgreSQL), NoSQL (MongoDB), analyse de données (Python).</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Web</h4>
+                    <p>HTML, CSS, JavaScript, PHP. Intégration et amélioration d'UI.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Outils</h4>
+                    <p>Suivi technique, outils collaboratifs et documentation.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h4>Transverses</h4>
+                    <p>Organisation, communication, logique et rigueur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-section" class="container section">
+            <h3>Projets</h3>
+            <div class="projects-showcase">
+                <div class="project-showcase-card">
+                    <div class="project-showcase-image">
+                        <img src="mindlock.png" alt="MindLock application">
+                    </div>
+                    <h4>MindLock</h4>
+                    <p>Application de productivité qui combine un blocage d'application intelligent avec des défis d'apprentissage (QCM et exercices logiques) pour favoriser la concentration et l'apprentissage.</p>
+                    <div class="project-showcase-tags">
+                        <span>React</span>
+                        <span>Flutter</span>
+                        <span>Travail d'équipe</span>
+                    </div>
+                    <div class="project-showcase-links">
+                        <a href="https://github.com/iraven93420/mindLock.git" aria-label="Code source"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-showcase-card">
+                    <div class="project-showcase-image">
+                        <img src="site.png" alt="Gestion Fiches de Paie & Congés">
+                    </div>
+                    <h4>Gestion Fiches de Paie & Congés</h4>
+                    <p>Site web sécurisé de gestion RH permettant aux employés de consulter et télécharger leurs fiches de paie, ainsi que gérer leurs demandes de congés avec gestion automatique des jours fériés et week-ends.</p>
+                    <div class="project-showcase-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Sécurité</span>
+                    </div>
+                    <div class="project-showcase-links">
+                        <a href="https://github.com/J2S80000/SAE-GERICO" aria-label="Code source"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </section>
+
+        <section id="projects" class="container section">
+            <h3>Expériences</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-code"></i>
+                        <div class="project-links">
+                            <!-- Remplacer par vos liens réels -->
+                        </div>
+                    </div>
+                    <h4>Stage • Développement web</h4>
+                    <p class="experience-meta">Amiens Métropole — Janvier à Mars 2025</p>
+                    <ul>
+                        <li>Amélioration de l'aspect visuel du site Amiens.fr.</li>
+                        <li>Intégration d'éléments du Journal des Amiénois (JDA) dans la version numérique.</li>
+                    </ul>
+                    <div class="project-techs">
+                        <span>HTML</span> <span>CSS</span> <span>Design</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-user-tie"></i>
+                        <div class="project-links"></div>
+                    </div>
+                    <h4>Assistant administratif</h4>
+                    <p class="experience-meta">Association AMLI — Juillet 2024</p>
+                    <ul>
+                        <li>Mise en place d'un logiciel de suivi technique (accès, accompagnement, note).</li>
+                        <li>Suivi de relogements avec logiciel interne.</li>
+                        <li>Gestion administrative (classement, enregistrement, phoning).</li>
+                    </ul>
+                    <div class="project-techs">
+                        <span>Organisation</span> <span>Communication</span> <span>Suivi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container section">
+            <h3>Contact</h3>
+            <p class="contact-pitch">
+                Disponible pour un stage du 2 mars au 5 juin 2026. Parlons de vos besoins en data et web.
+            </p>
+            <div class="contact-actions">
+                <a href="mailto:iravencheng04@gmail.com" class="cta-button"><i class="fas fa-paper-plane"></i> Email</a>
+                <a href="https://wa.me/33651630066" class="cta-button ghost"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            <p class="contact-info">06 51 63 00 66 • Crépy-en-Valois</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-footer">
+                <a href="#" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 • Iraven Chengubraydoo — BUT Informatique, IUT d'Amiens.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle with localStorage
+        const toggle = document.querySelector('.theme-toggle');
+        const root = document.documentElement;
+        const stored = localStorage.getItem('theme');
+        if (stored === 'light') root.classList.add('light');
+        toggle.addEventListener('click', () => {
+            root.classList.toggle('light');
+            localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
+        });
+
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('in');
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.section, .hero').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
