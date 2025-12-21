@@ -362,42 +362,97 @@ footer p {
 
 /* Pour les petits écrans (téléphones) */
 @media (max-width: 768px) {
-    #hero h1 {
-        font-size: 2.5rem;
-    }
-    #hero h2 {
-        font-size: 1.8rem;
+    .section {
+        padding: 60px 16px;
     }
     
-    .nav-links { display: none; }
-    .hero { flex-direction: column; gap: 28px; }
-    .hero-visual { width: 100%; min-height: 220px; display: flex; justify-content: center; }
-    .avatar { width: 160px; height: 160px; border-radius: 16px; }
-        .avatar { width: 160px; height: 160px; border-radius: 50%; }
+    h1 {
+        font-size: 2rem !important;
     }
-
-    /* --- Extra polish --- */
-    /* Reduce anchor jump cutoff due to sticky header */
-    :target::before {
-        content: "";
-        display: block;
-        height: 80px; /* header height offset */
-        margin-top: -80px;
+    
+    h2 {
+        font-size: 1.3rem !important;
     }
-
-    /* Micro interactions */
-    .project-card h4 { transition: color 0.2s ease; }
-    .project-card:hover h4 { color: var(--accent); }
-    .skill-card i { transition: transform 0.2s ease; }
-    .skill-card:hover i { transform: scale(1.08); }
-
-    /* Nav improvements for small screens (basic) */
-    @media (max-width: 768px) {
-        nav { position: relative; }
+    
+    h3 {
+        font-size: 1.6rem;
     }
-
-    .projects-grid, .skills-grid {
+    
+    .nav-links {
+        display: none;
+    }
+    
+    header nav {
+        padding: 12px 0;
+    }
+    
+    .hero {
+        flex-direction: column;
+        gap: 32px;
+        padding: 60px 16px 40px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        align-items: center;
+    }
+    
+    .hero-visual {
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .about-grid {
+        gap: 20px;
+    }
+    
+    .skills-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .projects-showcase {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-showcase-image {
+        height: 180px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .contact-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .contact-actions .cta-button {
+        width: 100%;
+    }
+    
+    footer {
+        padding: 32px 16px;
     }
 }
 
