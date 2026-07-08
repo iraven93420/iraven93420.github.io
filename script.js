@@ -17,6 +17,9 @@ themeToggle?.addEventListener('click', () => {
 });
 
 function updateThemeIcon() {
+    if (!themeToggle) {
+        return;
+    }
     const icon = themeToggle.querySelector('i');
     const isLight = html.classList.contains('light');
     icon.classList.remove(isLight ? 'fa-moon' : 'fa-sun');
@@ -50,3 +53,17 @@ filterBtns.forEach(btn => {
 
 // Initialiser l'affichage des projets
 projectItems.forEach(item => item.classList.add('show'));
+
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.section, .hero').forEach(element => {
+    element.classList.add('reveal');
+    observer.observe(element);
+});

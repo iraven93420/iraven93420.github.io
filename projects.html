@@ -27,155 +27,156 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="container hero-projects">
             <div class="hero-content">
-                <h1>Mes Projets</h1>
+                <h1>Projets et expériences</h1>
                 <p class="tagline">
-                    Découvrez les projets sur lesquels j'ai travaillé, mettant en avant développement web, 
-                    gestion de données et expérience utilisateur.
+                    Une vue d'ensemble de mes projets académiques, de mes expériences professionnelles et de mon parcours en data.
                 </p>
             </div>
         </section>
 
-        <!-- Filtres -->
-        <section class="container filters-section">
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="data">Data</button>
-                <button class="filter-btn" data-filter="other">Autre</button>
+        <section class="container section">
+            <h3>Projets académiques</h3>
+            <div class="projects-showcase">
+                <div class="project-showcase-card">
+                    <div class="project-showcase-image">
+                        <img src="mindlock.png" alt="MindLock application">
+                    </div>
+                    <h4>MindLock</h4>
+                    <p>Application de productivité qui combine un blocage d'application intelligent avec des défis d'apprentissage (QCM et exercices logiques) pour favoriser la concentration et l'apprentissage.</p>
+                    <div class="project-showcase-tags">
+                        <span>Productivité</span>
+                        <span>Apprentissage</span>
+                        <span>Projet académique</span>
+                    </div>
+                    <div class="project-showcase-links">
+                        <a href="https://github.com/iraven93420/mindLock.git" aria-label="Code source sur GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-showcase-card">
+                    <div class="project-showcase-image">
+                        <img src="site.png" alt="Gestion Fiches de Paie & Congés">
+                    </div>
+                    <h4>Gestion Fiches de Paie & Congés</h4>
+                    <p>Site web sécurisé de gestion RH permettant aux employés de consulter et télécharger leurs fiches de paie, ainsi que gérer leurs demandes de congés avec gestion automatique des jours fériés et week-ends.</p>
+                    <div class="project-showcase-tags">
+                        <span>RH</span>
+                        <span>Sécurité</span>
+                        <span>Projet académique</span>
+                    </div>
+                    <div class="project-showcase-links">
+                        <a href="https://github.com/J2S80000/SAE-GERICO" aria-label="Code source sur GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Grid des Projets -->
-        <section class="container projects-page-grid">
-            <div class="project-item" data-category="web">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-globe"></i>
+        <section class="container section">
+            <h3>Expériences professionnelles</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Data Analyst</h4>
+                    <p class="experience-meta">Onet Airport Services, Paris-CDG • mars 2026 - juin 2026</p>
+                    <ul>
+                        <li>Extraction, nettoyage et transformation de données d'exploitation via Power Query et DAX.</li>
+                        <li>Fusion de plus de 270 fichiers CSV issus de trois périmètres distincts.</li>
+                        <li>Conception d'un tableau de bord Power BI sur la volatilité des effectifs.</li>
+                        <li>Développement d'un dashboard de catégorisation des appels téléphoniques.</li>
+                    </ul>
+                    <div class="project-techs">
+                        <span>Power BI</span> <span>Power Query</span> <span>DAX</span>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3>Nom du Projet 1</h3>
-                    <p class="project-description">
-                        Description courte de votre projet : technologies utilisées, 
-                        objectif principal et résultats.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="project-links-group">
-                        <a href="#" class="project-link" aria-label="Voir le projet">
-                            <i class="fas fa-external-link-alt"></i> Voir
-                        </a>
-                        <a href="#" class="project-link" aria-label="Code source sur GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                    <h4>Développement web</h4>
+                    <p class="experience-meta">Amiens Métropole, Hôtel de Ville d'Amiens • janv. 2025 - mars 2025</p>
+                    <ul>
+                        <li>Amélioration de l'interface visuelle du site Amiens.fr.</li>
+                        <li>Intégration numérique des éléments du Journal des Amiénois (JDA) dans le site.</li>
+                    </ul>
+                    <div class="project-techs">
+                        <span>HTML</span> <span>CSS</span> <span>Intégration</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Assistant administratif</h4>
+                    <p class="experience-meta">Association AMLI, Levallois-Perret • juill. 2024</p>
+                    <ul>
+                        <li>Déploiement d'un logiciel de suivi technique : création des accès, formation des collaborateurs et note de présentation.</li>
+                        <li>Phoning, prise de rendez-vous, gestion des réclamations et suivi de relogements via logiciel interne.</li>
+                    </ul>
+                    <div class="project-techs">
+                        <span>Organisation</span> <span>Communication</span> <span>Suivi</span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="project-item" data-category="data">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-chart-bar"></i>
+        <section class="container section">
+            <h3>Formation</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
+                    <h4>Cycle ingénieur - Data & IA</h4>
+                    <p class="experience-meta">ESIEA, Paris • rentrée 2026</p>
+                    <ul>
+                        <li>Admis pour la rentrée 2026.</li>
+                    </ul>
                 </div>
-                <div class="project-content">
-                    <h3>Nom du Projet 2</h3>
-                    <p class="project-description">
-                        Description courte de votre projet : technologies utilisées, 
-                        objectif principal et résultats.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Pandas</span>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="#" class="project-link" aria-label="Voir le projet">
-                            <i class="fas fa-external-link-alt"></i> Voir
-                        </a>
-                        <a href="#" class="project-link" aria-label="Code source sur GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="project-item" data-category="web">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-laptop-code"></i>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-university"></i>
                     </div>
+                    <h4>BUT Informatique</h4>
+                    <p class="experience-meta">IUT d'Amiens • mai 2026</p>
+                    <ul>
+                        <li>Parcours Data & Exploitation des Données.</li>
+                    </ul>
                 </div>
-                <div class="project-content">
-                    <h3>Nom du Projet 3</h3>
-                    <p class="project-description">
-                        Description courte de votre projet : technologies utilisées, 
-                        objectif principal et résultats.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">Bootstrap</span>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="#" class="project-link" aria-label="Voir le projet">
-                            <i class="fas fa-external-link-alt"></i> Voir
-                        </a>
-                        <a href="#" class="project-link" aria-label="Code source sur GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="project-item" data-category="other">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-cube"></i>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-book"></i>
                     </div>
-                </div>
-                <div class="project-content">
-                    <h3>Nom du Projet 4</h3>
-                    <p class="project-description">
-                        Description courte de votre projet : technologies utilisées, 
-                        objectif principal et résultats.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">API</span>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="#" class="project-link" aria-label="Voir le projet">
-                            <i class="fas fa-external-link-alt"></i> Voir
-                        </a>
-                        <a href="#" class="project-link" aria-label="Code source sur GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
+                    <h4>Licence Maths-Informatique</h4>
+                    <p class="experience-meta">Université de Picardie Jules Verne, Amiens • mai 2023</p>
+                    <ul>
+                        <li>Baccalauréat général spécialités mathématiques et physique-chimie, Lycée Jean-Monnet, Crépy-en-Valois • mai 2022.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <!-- Call to Action -->
         <section class="container cta-section">
-            <h2>Vous avez un projet en tête ?</h2>
-            <p>Je suis disponible pour discuter de nouvelles opportunités.</p>
+            <h2>Vous avez un besoin en data ou en web ?</h2>
+            <p>Je suis disponible pour discuter d'une alternance à partir de fin août 2026.</p>
             <a href="index.html#contact" class="cta-button">Me contacter</a>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Iraven Chengubraydoo. Tous droits réservés.</p>
+            <p>&copy; 2026 Iraven Chengubraydoo. Portfolio mis à jour à partir du CV.</p>
             <div class="footer-links">
-                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/iraven93420" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="file/iraven%20(9).pdf" aria-label="Télécharger le CV"><i class="fas fa-file-pdf"></i></a>
             </div>
         </div>
     </footer>
